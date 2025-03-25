@@ -66,7 +66,7 @@ export function ProductTable({ products }: ProductTableProps) {
                   <td className="p-3 text-lg text-black whitespace-nowrap">
                     {item.id}
                   </td>
-                  <td className="p-3 text-lg text-black whitespace-nowrap max-w-[300px]">
+                  <td className="p-3 text-lg text-black whitespace-nowrap text-wrap">
                     <div className="flex items-center gap-2">
                       {getProductIcon(item.name)}
                       <div>{item.name}</div>
@@ -96,8 +96,8 @@ export function ProductTable({ products }: ProductTableProps) {
                   <td className="p-3 text-lg text-black whitespace-nowrap">
                     {item.data?.generation || item.data?.year || "N/A"}
                   </td>
-                  <td className="p-3 text-lg text-black max-w-[200px] truncate">
-                    {item.data?.description || "N/A"}
+                  <td className="p-3 text-lg text-black max-w-[200px] text-wrap">
+                    {item.data?.Description || "N/A"}
                   </td>
                 </tr>
               ))}

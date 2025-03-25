@@ -3,7 +3,7 @@ export interface Product {
   name?: string;
   data?: {
     [key: string]: any;
-  };
+  } | null;
 }
 
 export interface ProductTableProps {
